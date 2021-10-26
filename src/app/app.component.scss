@@ -1,0 +1,86 @@
+.my-overlay {
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 10000 !important;
+    width: 100% !important;
+    height: 100% !important;
+    position: fixed !important;
+    background-color: rgba(0,0,0,0.9) !important;
+    cursor: pointer !important;
+    visibility: visible !important;
+    transition: visibility 0s, opacity 0.4s linear !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: wait !important;
+}
+
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+
+  }
+  
+
+.NavigationBar{ 
+    position: fixed;
+    position: -webkit-sticky;
+    z-index: 999;
+    .navbar-brand {
+        // z-index: 200;
+        // position: relative;
+        // left: 20px; 
+        z-index: 200;
+
+
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .NavTitle{
+        font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: normal;
+    }
+    #dsc_nav_logo{
+        height: 30px;
+        width: 53px;       
+    }
+    #dsc_nav_logo_short{
+        height: 50px;
+        width: auto;       
+    }
+
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #main_logo{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 270px;
+      width: auto;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .NavigationBar{ 
+        .navbar-brand {
+            z-index: 200;
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    }
+  }

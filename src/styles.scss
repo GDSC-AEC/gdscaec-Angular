@@ -1,0 +1,105 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; scroll-behavior: smooth;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.noselectt {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+@font-face {
+    font-family: sans-regular;
+    src: url(assets/Font/GoogleSans-Regular-v1.27.ttf);
+}
+@font-face {
+    font-family: sans-display-regular;
+    src: url(assets/Font/GoogleSansDisplay-Regular-v1.27.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* background Color */
+
+.dark {
+    background: #222;
+}
+
+.white {
+    background: whitesmoke;
+}
+
+/** Background Color **/
+
+.overflow, .circle-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.overflow {
+    z-index: 9998;
+    width: 100vw;
+    height: 100vh;
+}
+
+.circle-line {
+    z-index: 9999;
+    width: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.circle-red,.circle-green,.circle-yellow,.circle-blue{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+.circle-red {
+    background-color: #EA4335;
+    animation: movingUp 1.2s infinite alternate;
+  
+}
+
+.circle-blue {
+    background-color: #4285f4;
+    animation: movingUp 1.2s 0.25s infinite alternate;
+   
+}
+
+.circle-green {
+    background-color: #34A853;
+    animation: movingUp 1.2s .4s infinite alternate;
+    
+  
+}
+
+.circle-yellow {
+    background-color: #FBBC05;
+    animation: movingUp 1.2s .6s infinite alternate;
+    
+}
+
+/* CSS ANIMATION */
+
+@keyframes movingUp {
+    0% {
+    
+        top: 0px;
+        
+    }
+
+    100% {
+        top:40px;
+    }
+}

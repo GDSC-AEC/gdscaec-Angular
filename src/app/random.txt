@@ -1,0 +1,27 @@
+Teams
+  | (Menu 1)
+    Current (Item 1)
+    Archived (Item 2)
+       | (Sub Menu)
+        2021-2022 
+        2022-2023
+
+-----------
+
+1. Hacktober Fest -> Min 4-5 PRs
+2. Dummy Project -> (Public) - For open Souce developers
+3. Github -> [Fork - Modify - PR - Merge] | [Commit Push]
+
+Developers: 
+1. Core Dev | (Paid Projects)
+2. GDSC Dev | (100% Interest & Less Knowledge But have Will to learn)
+
+-----------
+
+1. GDSC Website 
+    • Angular / React
+    • Python Flask / FireBase
+
+Hacktober Fest [ Oct 1 - 30 ]  | Open Souce Developers - Contributions. 
+
+

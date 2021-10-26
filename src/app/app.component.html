@@ -1,0 +1,85 @@
+<!-- <div class=" overflow dark" *ngIf="showOverlay">
+  <div class="circle-line" aria-hidden="true">
+    <div class="circle-red">&nbsp;</div>
+    <div class="circle-blue">&nbsp;</div>
+    <div class="circle-green">&nbsp;</div>
+    <div class="circle-yellow">&nbsp;</div>
+  </div>
+</div> -->
+
+<div class="my-overlay overflow white" id="preload" *ngIf="showOverlay">
+  <div class="circle-line">
+    <div class="circle-red">&nbsp;</div>
+    <div class="circle-blue">&nbsp;</div>
+    <div class="circle-green">&nbsp;</div>
+    <div class="circle-yellow">&nbsp;</div>
+  </div>
+</div>
+
+<mat-toolbar color="primary" class="NavigationBar navbar-fixed-top">
+
+
+  <div class="container">
+    <mat-toolbar-row class="noselectt">
+
+
+      <a class="navbar-brand" href="/gdscaec.github.io">
+        <img id="dsc_nav_logo_short" src="assets/images/gdsc_diff_circle.png" alt="Logo" class="noselect">
+      </a>
+
+      <span class="example-spacer"></span>
+      <div fxShow="false" fxHide.gt-xs="false">
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <button mat-button [routerLink]="['']">Home</button>
+        <button [matMenuTriggerFor]="Team_menu" mat-button>Team</button>
+
+        <mat-menu #Team_menu="matMenu">
+          <button mat-menu-item [routerLink]="['/Team']">Current</button>
+          <button mat-menu-item [matMenuTriggerFor]="archived" disabled>Archived <mat-icon>archive</mat-icon> </button>
+          <mat-menu #archived="matMenu">
+          </mat-menu>
+        </mat-menu>
+
+        <button mat-button [routerLink]="['/Events/GoogleCloud']">Events</button>
+        <button mat-button onclick="location.href='#Aditya'">College</button>
+
+        <button mat-button>Contact</button>
+        <button mat-icon-button>
+          <mat-icon>light_mode</mat-icon>
+        </button>
+
+      </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row fxFlexFill style="align-items: center; text-align: center;">
+      <div fxShow="true" fxHide.gt-xs="true" class="container">
+
+        <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+        <button mat-button [routerLink]="['']">Home</button>
+        <button mat-button [routerLink]="['/Team']">Team</button>
+
+        <mat-menu #Team_menu="matMenu">
+          <button mat-menu-item [routerLink]="['/Team']">Current</button>
+          <button mat-menu-item [matMenuTriggerFor]="archived" disabled>Archived <mat-icon>archive</mat-icon> </button>
+          <mat-menu #archived="matMenu">
+          </mat-menu>
+        </mat-menu>
+
+        <button mat-button [routerLink]="['/Events/GoogleCloud']">Events</button>
+        <button mat-button onclick="location.href='#Aditya'">College</button>
+        <button mat-button>Contact</button>
+        <button mat-icon-button>
+          <mat-icon>light_mode</mat-icon>
+        </button>
+      </div>
+    </mat-toolbar-row>
+
+  </div>
+</mat-toolbar>
+
+
+<body>
+  <div [@triggerName]="prepareRoute(outlet)">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+</body>

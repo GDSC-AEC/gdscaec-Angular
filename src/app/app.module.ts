@@ -14,6 +14,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { TestComponent } from './test/test.component';
 import { CloudComponent } from './cloud/cloud.component';
 import { ProgComponent } from './prog/prog.component';
+import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProgComponent } from './prog/prog.component';
     ContactComponent,
     TestComponent,
     CloudComponent,
-    ProgComponent
+    ProgComponent,
+    NavigationbarComponent,
   ],
   imports: [
     BrowserModule,

@@ -55,8 +55,8 @@
       <div fxShow="true" fxHide.gt-xs="true" class="container">
 
         <!-- The following menu items will be hidden on both SM and XS screen sizes -->
-        <button mat-button [routerLink]="['']">Home</button>
-        <button mat-button [routerLink]="['/Team']">Team</button>
+                <button mat-button [routerLink]="['']">Home</button>
+        <button [matMenuTriggerFor]="Team_menu" mat-button>Team</button>
 
         <mat-menu #Team_menu="matMenu">
           <button mat-menu-item [routerLink]="['/Team']">Current</button>
@@ -78,7 +78,7 @@
 </mat-toolbar>
 
 
-<body>
+<body class="noselectt">
   <div [@triggerName]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </div>
